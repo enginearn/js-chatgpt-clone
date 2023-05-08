@@ -4,16 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
+        <script defer type="text/javascript" src="apikey.js"></script>
         <script defer src="chat.js"></script>
         <title>ChatGPT Clone</title>
     </head>
     <body>
         <section class="side-bar">
-            <button>New Chat</button>
+            <button id="new-chat">New Chat</button>
             <div class="history"></div>
-            <div class="nav">
+            <nav>
                 <p>Made by freeCodeCamp</p>
-            </div>
+            </nav>
         </section>
         <section class="main">
             <h1>ChatGPT Clone</h1>
@@ -21,7 +22,7 @@
             <div class="botton-section">
                 <div class="input-container">
                     <input/>
-                    <div id="submit"></div>
+                    <div id="submit">➢</div>
                 </div>
             </div>
             <p class="info">ChatGPT may produce inaccurate information about people, places, or facts.</p>
