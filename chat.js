@@ -24,17 +24,13 @@ async function getMessage() {
         body: JSON.stringify({
             model: "gpt-3.5-turbo",
             messages: [{"role": "user", "content": input.value}],
-            max_tokens: 100,
+            // max_tokens: 100,
             temperature: 0.9,
-            top_p: 1,
-            presence_penalty: 0,
-            frequency_penalty: 0,
-            stop: ["\n", " Human:", " AI:"]
         })
     }
     try {
         const response = await fetch(endpoint, options)
-            const data = await response.json()
+        const data = await response.json()
             console.log(data)
             output.textContent = data.choices[0].message.content
             if (data.choices[0].message.content) {
@@ -43,9 +39,10 @@ async function getMessage() {
                 pElement.addEventListener('click', () => changeInput(pElement.textContent))
                 chatHistory.append(pElement)
             }
-    } catch (error) {
-        console.error(error)
-    }
+        } catch (error) {
+            console.error(error)
+        }
+        input.value = ''
 
 }
 
