@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Vai&family=Shadows+Into+Light&display=swap');
+
+* {
+    color: #fff;
+    font-family: "Noto Sans Vai", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #444654;
+    display: flex;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 500px;
+    padding: 200px 0;
+}
+
+.side-bar {
+    width: 10%;
+    background-color: #2c2c3a;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.bottom-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+    padding: 10px;
+}
+
+input {
+    border: node;
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 100%;
+    font-size: 20px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.05) 0 0.5px 0.5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.input-container {
+    width: 100%;
+    max-width: 800px;
+}
